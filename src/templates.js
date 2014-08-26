@@ -21,21 +21,21 @@ app.run(["$templateCache", function($templateCache) {
     "      <li class=\"divider\"></li>\n" +
     "      <li>\n" +
     "        <a href=\"\" ng-click=\"userSettings()\">\n" +
-    "          <i class=\"glyphicons cogwheels\"></i>\n" +
+    "          <i class=\"fa fa-cog\"></i>\n" +
     "          <span class=\"item-name\">User Settings</span>\n" +
     "        </a>\n" +
     "      </li>\n" +
     "      <li class=\"divider\"></li>\n" +
     "      <li>\n" +
     "        <a href=\"\" ng-click=\"paymentMethods()\">\n" +
-    "          <i class=\"glyphicons usd\"></i>\n" +
+    "          <i class=\"fa fa-usd\"></i>\n" +
     "          <span class=\"item-name\">Payment Methods</span>\n" +
     "        </a>\n" +
     "      </li>\n" +
     "      <li class=\"divider\"></li>\n" +
     "      <li ng-show=\"userState.authStatus > 0\">\n" +
     "        <a href=\"\" ng-click=\"logout()\" class=\"sign-out-button\">\n" +
-    "          <i class=\"glyphicons log_out\"></i>\n" +
+    "          <i class=\"fa fa-sign-out\"></i>\n" +
     "          <span class=\"item-name\">Sign Out</span>\n" +
     "        </a>\n" +
     "      </li>\n" +
@@ -44,7 +44,7 @@ app.run(["$templateCache", function($templateCache) {
     "  <li ng-show=\"userState.authStatus === 0\">\n" +
     "    <a href=\"\" class=\"sign-in\" ng-click=\"loginModal()\">\n" +
     "      <span>Sign In</span>\n" +
-    "      <i class=\"glyphicons log_in\"></i>\n" +
+    "      <i class=\"fa fa-sign-in\"></i>\n" +
     "    </a>\n" +
     "  </li>\n" +
     "</ul>\n" +
@@ -125,7 +125,7 @@ app.run(["$templateCache", function($templateCache) {
     "			<!-- Notifications -->\n" +
     "			<li class=\"dropdown\" ng-show=\"userState.authStatus > 0\">\n" +
     "				<a href=\"\" class=\"dropdown-toggle\">\n" +
-    "					<i class=\"glyphicons bell\"></i>\n" +
+    "					<i class=\"fa fa-bell\"></i>\n" +
     "					<span class=\"label label-danger\">{{messages.length}}</span>\n" +
     "				</a>\n" +
     "				<ul class=\"dropdown-menu system-messages\">\n" +
@@ -147,26 +147,26 @@ app.run(["$templateCache", function($templateCache) {
     "			<!-- Current App -->\n" +
     "			<li class=\"dropdown\" ng-show=\"userState.authStatus > 0\">\n" +
     "				<a href=\"\" class=\"dropdown-toggle\">\n" +
-    "					<i class=\"glyphicons show_thumbnails\"></i>\n" +
+    "					<i class=\"fa fa-photo\"></i>\n" +
     "				</a>\n" +
     "				<ul class=\"dropdown-menu company-menu\">\n" +
     "					<li class=\"dropdown-header dropdown-title\">\n" +
     "						Current App\n" +
     "					</li>\n" +
     "					<li class=\"dropdown-header\">\n" +
-    "						<i class=\"glyphicons shop\"></i> Store\n" +
+    "						<i class=\"fa fa-building\"></i> Store\n" +
     "					</li>\n" +
     "					<li class=\"divider\"></li>\n" +
     "					<li>\n" +
     "						<div class=\"menu-box pull-left\">\n" +
     "							<a href=\"\">\n" +
-    "								<i class=\"glyphicons picture\"></i>\n" +
+    "								<i class=\"fa fa-photo\"></i>\n" +
     "								<span>Displays</span>\n" +
     "							</a>\n" +
     "						</div>\n" +
     "						<div class=\"menu-box pull-right\">\n" +
     "							<a href=\"\">\n" +
-    "								<i class=\"glyphicons picture\"></i>\n" +
+    "								<i class=\"fa fa-photo\"></i>\n" +
     "								<span>Scheduler</span>\n" +
     "							</a>\n" +
     "						</div>\n" +
@@ -174,13 +174,13 @@ app.run(["$templateCache", function($templateCache) {
     "					<li>\n" +
     "						<div class=\"menu-box pull-left\">\n" +
     "							<a href=\"\">\n" +
-    "								<i class=\"glyphicons picture\"></i>\n" +
+    "								<i class=\"fa fa-photo\"></i>\n" +
     "								<span>Editor</span>\n" +
     "							</a>\n" +
     "						</div>\n" +
     "						<div class=\"menu-box pull-right\">\n" +
     "							<a href=\"\">\n" +
-    "								<i class=\"glyphicons picture\"></i>\n" +
+    "								<i class=\"fa fa-photo\"></i>\n" +
     "								<span>Storage</span>\n" +
     "							</a>\n" +
     "						</div>\n" +
@@ -188,13 +188,13 @@ app.run(["$templateCache", function($templateCache) {
     "					<li>\n" +
     "						<div class=\"menu-box pull-left\">\n" +
     "							<a href=\"\">\n" +
-    "								<i class=\"glyphicons picture\"></i>\n" +
+    "								<i class=\"fa fa-photo\"></i>\n" +
     "								<span>Bulletin</span>\n" +
     "							</a>\n" +
     "						</div>\n" +
     "						<div class=\"menu-box pull-right\">\n" +
     "							<a href=\"\">\n" +
-    "								<i class=\"glyphicons picture\"></i>\n" +
+    "								<i class=\"fa fa-photo\"></i>\n" +
     "								<span>Player</span>\n" +
     "							</a>\n" +
     "						</div>\n" +
@@ -230,7 +230,7 @@ app.run(["$templateCache", function($templateCache) {
   "use strict";
   $templateCache.put("company-buttons.html",
     "<a href=\"\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n" +
-    "  <i class=\"glyphicons cogwheel\"></i>\n" +
+    "  <i class=\"fa fa-cog\"></i>\n" +
     "</a>\n" +
     "<ul class=\"dropdown-menu\">\n" +
     "  <li class=\"dropdown-header dropdown-title\"\n" +
@@ -243,9 +243,9 @@ app.run(["$templateCache", function($templateCache) {
     "\n" +
     "  <li class=\"dropdown-header\" ng-show=\"userState.user.company\">\n" +
     "    <!-- home -->\n" +
-    "    <i ng-if=\"!subCompanySelected\" class=\"glyphicons home\"></i>\n" +
+    "    <i ng-if=\"!subCompanySelected\" class=\"fa fa-home\"></i>\n" +
     "    <!-- warning -->\n" +
-    "    <i ng-if=\"subCompanySelected\" class=\"glyphicons warning_sign glyphicon-danger\"></i>\n" +
+    "    <i ng-if=\"subCompanySelected\" class=\"fa fa-warning fa-danger\"></i>\n" +
     "    {{userState.selectedCompanyName}}\n" +
     "    <div ng-if=\"subCompanySelected\" class=\"danger\">This is a Sub-Company of your Company.</div>\n" +
     "  </li>\n" +
@@ -253,41 +253,41 @@ app.run(["$templateCache", function($templateCache) {
     "  <li ng-show=\"!userState.user.company\">\n" +
     "    <a href=\"\" data-toggle=\"modal\" data-target=\"#sub-company-modal\"\n" +
     "      ng-click=\"companySettings()\">\n" +
-    "      <i class=\"glyphicons plus\"></i>\n" +
+    "      <i class=\"fa fa-plus\"></i>\n" +
     "      <span class=\"item-name\">Create a Company</span>\n" +
     "    </a>\n" +
     "  </li>\n" +
     "  <li ng-if=\"subCompanySelected\">\n" +
     "    <a href=\"\" ng-click=\"resetCompany()\">\n" +
-    "      <i class=\"glyphicons home\"></i>\n" +
+    "      <i class=\"fa fa-home\"></i>\n" +
     "      <span class=\"item-name\">Switch To My Company</span>\n" +
     "    </a>\n" +
     "  </li>\n" +
     "  <li class=\"divider\"></li>\n" +
     "  <li ng-show=\"userState.user.company\">\n" +
     "    <a href=\"\" ng-click=\"switchCompany()\">\n" +
-    "      <i class=\"glyphicons new_window\"></i>\n" +
+    "      <i class=\"fa fa-share-square-0\"></i>\n" +
     "      <span class=\"item-name\">Select Sub-Company</span>\n" +
     "    </a>\n" +
     "  </li>\n" +
     "  <li ng-if=\"isAdmin\" class=\"divider\"></li>\n" +
     "  <li ng-if=\"isAdmin\">\n" +
     "    <a href=\"\" data-toggle=\"modal\" data-target=\"#sub-company-modal\" ng-click=\"addSubCompany()\">\n" +
-    "      <i class=\"glyphicons plus\"></i>\n" +
+    "      <i class=\"fa fa-plus\"></i>\n" +
     "      <span class=\"item-name\">Add Sub-Company</span>\n" +
     "    </a>\n" +
     "  </li>\n" +
     "  <li ng-if=\"isAdmin\" class=\"divider\"></li>\n" +
     "  <li ng-if=\"isAdmin\">\n" +
     "    <a href=\"\" ng-click=\"companySettings()\">\n" +
-    "      <i class=\"glyphicons cogwheels\"></i>\n" +
+    "      <i class=\"fa fa-cog\"></i>\n" +
     "      <span class=\"item-name\">Company Settings</span>\n" +
     "    </a>\n" +
     "  </li>\n" +
     "  <li ng-if=\"isAdmin\" class=\"divider\"></li>\n" +
     "  <li ng-if=\"isAdmin\">\n" +
     "    <a href=\"\" data-toggle=\"modal\" data-target=\"#company-users-modal\">\n" +
-    "      <i class=\"glyphicons group\"></i>\n" +
+    "      <i class=\"fa fa-roup\"></i>\n" +
     "      <span class=\"item-name\">Company Users</span>\n" +
     "    </a>\n" +
     "  </li>\n" +
@@ -304,7 +304,7 @@ app.run(["$templateCache", function($templateCache) {
   $templateCache.put("company-settings-modal.html",
     "<div class=\"modal-header\">\n" +
     "  <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\" ng-click=\"closeModal()\">\n" +
-    "    <i class=\"glyphicons remove_2\"></i>\n" +
+    "    <i class=\"fa fa-times\"></i>\n" +
     "  </button>\n" +
     "  <h2 id=\"company-settings-label\" class=\"modal-title\">Company Settings</h2>\n" +
     "</div>\n" +
@@ -409,7 +409,7 @@ app.run(["$templateCache", function($templateCache) {
     "            </li>\n" +
     "            <li class=\"close-button\">\n" +
     "              <button type=\"button\" class=\"close\" aria-hidden=\"true\" ng-click=\"closeSelector()\">\n" +
-    "                <i class=\"glyphicons remove_2\"></i>\n" +
+    "                <i class=\"fa fa-times\"></i>\n" +
     "              </button>\n" +
     "            </li>\n" +
     "          </ul>\n" +
@@ -419,7 +419,7 @@ app.run(["$templateCache", function($templateCache) {
     "                <input type=\"text\" class=\"form-control\" placeholder=\"Search Presentations\">\n" +
     "                <span class=\"input-group-btn\">\n" +
     "                  <button class=\"btn btn-primary\" type=\"submit\">\n" +
-    "                    <i class=\"glyphicon glyphicon-search\"></i>\n" +
+    "                    <i class=\"fa fa-search\"></i>\n" +
     "                  </button>\n" +
     "                </span>\n" +
     "              </div>\n" +
@@ -480,16 +480,16 @@ app.run(["$templateCache", function($templateCache) {
     "  </div>\n" +
     "  <div class=\"modal-footer\">\n" +
     "    <button type=\"button\" class=\"btn btn-primary btn-fixed-width\" ng-click=\"save()\">Save\n" +
-    "      <i class=\"glyphicons white ok_2 icon-right\"></i>\n" +
+    "      <i class=\"fa fa-white fa-check icon-right\"></i>\n" +
     "    </button>\n" +
     "    <button type=\"button\" class=\"btn btn-danger btn-fixed-width\" ng-show=\"!isDeletingCompany\" ng-click=\"deleteCompany()\">\n" +
-    "      Delete <i class=\"glyphicons white bin icon-right\"></i>\n" +
+    "      Delete <i class=\"fa fa-white fa-trash-o icon-right\"></i>\n" +
     "    </button>\n" +
     "    <button type=\"button\" class=\"btn btn-danger btn-confirm-delete\" data-dismiss=\"modal\" ng-show=\"isDeletingCompany\" ng-click=\"closeModal()\">\n" +
-    "      Confirm Deletion <i class=\"glyphicons white warning_sign icon-right\"></i>\n" +
+    "      Confirm Deletion <i class=\"fa fa-white fa-warning icon-right\"></i>\n" +
     "    </button>\n" +
     "    <button type=\"button\" class=\"btn btn-primary btn-fixed-width\" data-dismiss=\"modal\">Cancel\n" +
-    "      <i class=\"glyphicons white remove_2 icon-right\"></i>\n" +
+    "      <i class=\"fa fa-white fa-times icon-right\"></i>\n" +
     "    </button>\n" +
     "  </div>\n" +
     "</div>\n" +
@@ -505,7 +505,7 @@ app.run(["$templateCache", function($templateCache) {
   $templateCache.put("company-users-modal.html",
     "<div class=\"modal-header\">\n" +
     "  <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">\n" +
-    "    <i class=\"glyphicons remove_2\"></i>\n" +
+    "    <i class=\"fa fa-times\"></i>\n" +
     "  </button>\n" +
     "  <h2 id=\"company-users-label\" class=\"modal-title\">Company Users</h2>\n" +
     "</div>\n" +
@@ -573,10 +573,10 @@ app.run(["$templateCache", function($templateCache) {
     "</div>\n" +
     "<div class=\"modal-footer\">\n" +
     "  <button type=\"button\" class=\"btn btn-primary\" data-dismiss=\"modal\" data-toggle=\"modal\" data-target=\"#user-settings-modal\">Add User\n" +
-    "    <i class=\"glyphicons white plus icon-right\"></i>\n" +
+    "    <i class=\"fa fa-white fa-plus icon-right\"></i>\n" +
     "  </button>\n" +
     "  <button type=\"button\" class=\"btn btn-primary\" data-dismiss=\"modal\">\n" +
-    "    Cancel <i class=\"glyphicons white remove_2 icon-right\"></i>\n" +
+    "    Cancel <i class=\"fa fa-white fa-times icon-right\"></i>\n" +
     "  </button>\n" +
     "</div>\n" +
     "");
@@ -591,7 +591,7 @@ app.run(["$templateCache", function($templateCache) {
   $templateCache.put("credit-cards-modal.html",
     "<div class=\"modal-header\">\n" +
     "  <button type=\"button\" class=\"close\" ng-click=\"closeModal()\">\n" +
-    "    <i class=\"glyphicons remove_2\"></i>\n" +
+    "    <i class=\"fa fa-times\"></i>\n" +
     "  </button>\n" +
     "  <h2 id=\"pay-now-label\" class=\"modal-title\">Credit Cards</h2>\n" +
     "</div>\n" +
@@ -698,16 +698,16 @@ app.run(["$templateCache", function($templateCache) {
     "    </div>\n" +
     "    <div class=\"col-sm-9\">\n" +
     "      <button type=\"button\" class=\"btn btn-primary btn-fixed-width\" data-dismiss=\"modal\" ng-click=\"closeModal()\">Save\n" +
-    "        <i class=\"glyphicons white ok_2 icon-right\"></i>\n" +
+    "        <i class=\"fa fa-white fa-check icon-right\"></i>\n" +
     "      </button>\n" +
     "      <button type=\"button\" class=\"btn btn-danger btn-fixed-width\" ng-show=\"!isDeletingCard\" ng-click=\"deleteCard()\">\n" +
-    "        Delete <i class=\"glyphicons white bin icon-right\"></i>\n" +
+    "        Delete <i class=\"fa fa-white fa-bin icon-right\"></i>\n" +
     "      </button>\n" +
     "      <button type=\"button\" class=\"btn btn-danger btn-confirm-delete\" data-dismiss=\"modal\" ng-show=\"isDeletingCard\" ng-click=\"closeModal()\">\n" +
-    "        Confirm Deletion <i class=\"glyphicons white warning_sign icon-right\"></i>\n" +
+    "        Confirm Deletion <i class=\"fa fa-white fa-warning icon-right\"></i>\n" +
     "      </button>\n" +
     "      <button type=\"button\" class=\"btn btn-primary btn-fixed-width\" data-dismiss=\"modal\" ng-click=\"closeModal()\">Cancel\n" +
-    "        <i class=\"glyphicons white remove_2 icon-right\"></i>\n" +
+    "        <i class=\"fa fa-white fa-times icon-right\"></i>\n" +
     "      </button>\n" +
     "    </div>\n" +
     "  </div>\n" +
@@ -724,7 +724,7 @@ app.run(["$templateCache", function($templateCache) {
   $templateCache.put("move-company-modal.html",
     "<div class=\"modal-header\">\n" +
     "  <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\" ng-click=\"closeModal()\">\n" +
-    "    <i class=\"glyphicons remove_2\"></i>\n" +
+    "    <i class=\"fa fa-times\"></i>\n" +
     "  </button>\n" +
     "  <h2 id=\"move-company-label\" class=\"modal-title\">Move Company</h2>\n" +
     "</div>\n" +
@@ -769,10 +769,10 @@ app.run(["$templateCache", function($templateCache) {
     "</div>\n" +
     "<div class=\"modal-footer\">\n" +
     "  <button type=\"button\" class=\"btn btn-success\" ng-show=\"showMoveCompany\" ng-click=\"moveCompany()\">Move Company\n" +
-    "    <i class=\"glyphicons white ok_2 icon-right\"></i>\n" +
+    "    <i class=\"fa fa-white fa-check icon-right\"></i>\n" +
     "  </button>\n" +
     "  <button type=\"button\" class=\"btn btn-primary\" data-dismiss=\"modal\" ng-click=\"closeModal()\">\n" +
-    "    Cancel <i class=\"glyphicons white remove_2 icon-right\"></i>\n" +
+    "    Cancel <i class=\"fa fa-white ra-times icon-right\"></i>\n" +
     "  </button>\n" +
     "</div>\n" +
     "");
@@ -787,7 +787,7 @@ app.run(["$templateCache", function($templateCache) {
   $templateCache.put("payment-methods-modal.html",
     "<div class=\"modal-header\">\n" +
     "  <button type=\"button\" class=\"close\" ng-click=\"closeModal()\">\n" +
-    "    <i class=\"glyphicons remove_2\"></i>\n" +
+    "    <i class=\"fa fa-times\"></i>\n" +
     "  </button>\n" +
     "  <h2 id=\"user-settings-label\" class=\"modal-title\">Payment Methods</h2>\n" +
     "</div>\n" +
@@ -828,7 +828,7 @@ app.run(["$templateCache", function($templateCache) {
     "    </div>\n" +
     "    <div class=\"col-sm-9\">\n" +
     "      <button type=\"button\" class=\"btn btn-primary\" ng-click=\"closeModal()\">\n" +
-    "        Cancel <i class=\"glyphicons white remove_2 icon-right\"></i>\n" +
+    "        Cancel <i class=\"fa fa-white fa-times icon-right\"></i>\n" +
     "      </button>\n" +
     "    </div>\n" +
     "  </div>\n" +
@@ -844,7 +844,7 @@ app.run(["$templateCache", function($templateCache) {
   "use strict";
   $templateCache.put("shoppingcart-button.html",
     "<a href=\"\" class=\"shopping-cart-button\">\n" +
-    "  <i class=\"glyphicons shopping_cart\"></i>\n" +
+    "  <i class=\"fa fa-shopping-cart\"></i>\n" +
     "  <span id=\"cartBadge\" class=\"label label-primary\">{{cartCount()}}</span>\n" +
     "</a>\n" +
     "");
@@ -859,7 +859,7 @@ app.run(["$templateCache", function($templateCache) {
   $templateCache.put("sub-company-modal.html",
     "<div class=\"modal-header\">\n" +
     "  <button type=\"button\" class=\"close\" ng-click=\"closeModal()\" aria-hidden=\"true\">\n" +
-    "    <i class=\"glyphicons remove_2\"></i>\n" +
+    "    <i class=\"fa fa-times \"></i>\n" +
     "  </button>\n" +
     "  <h2 id=\"sub-company-label\" class=\"modal-title\">Add Sub-Company</h2>\n" +
     "</div>\n" +
@@ -928,10 +928,10 @@ app.run(["$templateCache", function($templateCache) {
     "</div>\n" +
     "<div class=\"modal-footer\">\n" +
     "  <button type=\"button\" class=\"btn btn-primary btn-fixed-width\" ng-click=\"save()\">Save\n" +
-    "    <i class=\"glyphicons white ok_2 icon-right\"></i>\n" +
+    "    <i class=\"fa fa-white fa-check icon-right\"></i>\n" +
     "  </button>\n" +
     "  <button type=\"button\" class=\"btn btn-primary btn-fixed-width\" ng-click=\"closeModal()\">Cancel\n" +
-    "    <i class=\"glyphicons white remove_2 icon-right\"></i>\n" +
+    "    <i class=\"fa fa-white fa-times icon-right\"></i>\n" +
     "  </button>\n" +
     "</div>\n" +
     "");
@@ -981,10 +981,10 @@ app.run(["$templateCache", function($templateCache) {
     "    <div class=\"form-group\">\n" +
     "      <button type=\"button\" class=\"btn btn-primary btn-fixed-width\"\n" +
     "      ng-click=\"closeModal()\">\n" +
-    "        Cancel <i class=\"glyphicons white remove_2 icon-right\"></i>\n" +
+    "        Cancel <i class=\"fa fa-white fa-times icon-right\"></i>\n" +
     "      </button>\n" +
     "      <button ng-click=\"agree()\" type=\"button\" class=\"btn btn-success btn-fixed-width\">\n" +
-    "        Save <i class=\"glyphicons white ok_2 icon-right\"></i>\n" +
+    "        Save <i class=\"fa fa-white fa-check icon-right\"></i>\n" +
     "      </button>\n" +
     "    </div>\n" +
     "  </form>\n" +
@@ -1002,7 +1002,7 @@ app.run(["$templateCache", function($templateCache) {
   $templateCache.put("user-settings-modal.html",
     "<div class=\"modal-header\">\n" +
     "  <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\" ng-click=\"closeModal()\">\n" +
-    "    <i class=\"glyphicons remove_2\"></i>\n" +
+    "    <i class=\"fa fa-times\"></i>\n" +
     "  </button>\n" +
     "  <h2 id=\"user-settings-label\" class=\"modal-title\">User Settings</h2>\n" +
     "</div>\n" +
@@ -1092,16 +1092,16 @@ app.run(["$templateCache", function($templateCache) {
     "</div>\n" +
     "<div class=\"modal-footer\">\n" +
     "  <button type=\"button\" class=\"btn btn-primary btn-fixed-width\" data-dismiss=\"modal\" ng-click=\"closeModal()\">\n" +
-    "    Save <i class=\"glyphicons white ok_2 icon-right\"></i>\n" +
+    "    Save <i class=\"fa fa-white fa-check icon-right\"></i>\n" +
     "  </button>\n" +
     "  <button type=\"button\" class=\"btn btn-danger btn-fixed-width\" ng-show=\"!isDeletingUser\" ng-click=\"deleteUser()\">\n" +
-    "    Delete <i class=\"glyphicons white bin icon-right\"></i>\n" +
+    "    Delete <i class=\"fa fa-white fa-bin icon-right\"></i>\n" +
     "  </button>\n" +
     "  <button type=\"button\" class=\"btn btn-danger btn-confirm-delete\" data-dismiss=\"modal\" ng-show=\"isDeletingUser\" ng-click=\"closeModal()\">\n" +
-    "    Confirm Deletion <i class=\"glyphicons white warning_sign icon-right\"></i>\n" +
+    "    Confirm Deletion <i class=\"fa fa-white fa-warning icon-right\"></i>\n" +
     "  </button>\n" +
     "  <button type=\"button\" class=\"btn btn-primary btn-fixed-width\" data-dismiss=\"modal\" ng-click=\"closeModal()\">\n" +
-    "    Cancel <i class=\"glyphicons white remove_2 icon-right\"></i>\n" +
+    "    Cancel <i class=\"fa fa-white fa-times icon-right\"></i>\n" +
     "  </button>\n" +
     "</div>\n" +
     "");

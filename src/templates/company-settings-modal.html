@@ -1,6 +1,6 @@
 <div class="modal-header">
   <button type="button" class="close" data-dismiss="modal" aria-hidden="true" ng-click="closeModal()">
-    <i class="glyphicons remove_2"></i>
+    <i class="fa fa-times"></i>
   </button>
   <h2 id="company-settings-label" class="modal-title">Company Settings</h2>
 </div>
@@ -105,7 +105,7 @@
             </li>
             <li class="close-button">
               <button type="button" class="close" aria-hidden="true" ng-click="closeSelector()">
-                <i class="glyphicons remove_2"></i>
+                <i class="fa fa-times"></i>
               </button>
             </li>
           </ul>
@@ -115,7 +115,7 @@
                 <input type="text" class="form-control" placeholder="Search Presentations">
                 <span class="input-group-btn">
                   <button class="btn btn-primary" type="submit">
-                    <i class="glyphicon glyphicon-search"></i>
+                    <i class="fa fa-search"></i>
                   </button>
                 </span>
               </div>
@@ -176,16 +176,16 @@
   </div>
   <div class="modal-footer">
     <button type="button" class="btn btn-primary btn-fixed-width" ng-click="save()">Save
-      <i class="glyphicons white ok_2 icon-right"></i>
+      <i class="fa fa-white fa-check icon-right"></i>
     </button>
     <button type="button" class="btn btn-danger btn-fixed-width" ng-show="!isDeletingCompany" ng-click="deleteCompany()">
-      Delete <i class="glyphicons white bin icon-right"></i>
+      Delete <i class="fa fa-white fa-trash-o icon-right"></i>
     </button>
     <button type="button" class="btn btn-danger btn-confirm-delete" data-dismiss="modal" ng-show="isDeletingCompany" ng-click="closeModal()">
-      Confirm Deletion <i class="glyphicons white warning_sign icon-right"></i>
+      Confirm Deletion <i class="fa fa-white fa-warning icon-right"></i>
     </button>
     <button type="button" class="btn btn-primary btn-fixed-width" data-dismiss="modal">Cancel
-      <i class="glyphicons white remove_2 icon-right"></i>
+      <i class="fa fa-white fa-times icon-right"></i>
     </button>
   </div>
 </div>

@@ -1,6 +1,6 @@
 <div class="modal-header">
   <button type="button" class="close" ng-click="closeModal()">
-    <i class="glyphicons remove_2"></i>
+    <i class="fa fa-times"></i>
   </button>
   <h2 id="pay-now-label" class="modal-title">Credit Cards</h2>
 </div>
@@ -107,16 +107,16 @@
     </div>
     <div class="col-sm-9">
       <button type="button" class="btn btn-primary btn-fixed-width" data-dismiss="modal" ng-click="closeModal()">Save
-        <i class="glyphicons white ok_2 icon-right"></i>
+        <i class="fa fa-white fa-check icon-right"></i>
       </button>
       <button type="button" class="btn btn-danger btn-fixed-width" ng-show="!isDeletingCard" ng-click="deleteCard()">
-        Delete <i class="glyphicons white bin icon-right"></i>
+        Delete <i class="fa fa-white fa-bin icon-right"></i>
       </button>
       <button type="button" class="btn btn-danger btn-confirm-delete" data-dismiss="modal" ng-show="isDeletingCard" ng-click="closeModal()">
-        Confirm Deletion <i class="glyphicons white warning_sign icon-right"></i>
+        Confirm Deletion <i class="fa fa-white fa-warning icon-right"></i>
       </button>
       <button type="button" class="btn btn-primary btn-fixed-width" data-dismiss="modal" ng-click="closeModal()">Cancel
-        <i class="glyphicons white remove_2 icon-right"></i>
+        <i class="fa fa-white fa-times icon-right"></i>
       </button>
     </div>
   </div>

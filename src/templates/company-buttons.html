@@ -1,5 +1,5 @@
 <a href="" class="dropdown-toggle" data-toggle="dropdown">
-  <i class="glyphicons cogwheel"></i>
+  <i class="fa fa-cog"></i>
 </a>
 <ul class="dropdown-menu">
   <li class="dropdown-header dropdown-title"
@@ -12,9 +12,9 @@
 
   <li class="dropdown-header" ng-show="userState.user.company">
     <!-- home -->
-    <i ng-if="!subCompanySelected" class="glyphicons home"></i>
+    <i ng-if="!subCompanySelected" class="fa fa-home"></i>
     <!-- warning -->
-    <i ng-if="subCompanySelected" class="glyphicons warning_sign glyphicon-danger"></i>
+    <i ng-if="subCompanySelected" class="fa fa-warning fa-danger"></i>
     {{userState.selectedCompanyName}}
     <div ng-if="subCompanySelected" class="danger">This is a Sub-Company of your Company.</div>
   </li>
@@ -22,41 +22,41 @@
   <li ng-show="!userState.user.company">
     <a href="" data-toggle="modal" data-target="#sub-company-modal"
       ng-click="companySettings()">
-      <i class="glyphicons plus"></i>
+      <i class="fa fa-plus"></i>
       <span class="item-name">Create a Company</span>
     </a>
   </li>
   <li ng-if="subCompanySelected">
     <a href="" ng-click="resetCompany()">
-      <i class="glyphicons home"></i>
+      <i class="fa fa-home"></i>
       <span class="item-name">Switch To My Company</span>
     </a>
   </li>
   <li class="divider"></li>
   <li ng-show="userState.user.company">
     <a href="" ng-click="switchCompany()">
-      <i class="glyphicons new_window"></i>
+      <i class="fa fa-share-square-0"></i>
       <span class="item-name">Select Sub-Company</span>
     </a>
   </li>
   <li ng-if="isAdmin" class="divider"></li>
   <li ng-if="isAdmin">
     <a href="" data-toggle="modal" data-target="#sub-company-modal" ng-click="addSubCompany()">
-      <i class="glyphicons plus"></i>
+      <i class="fa fa-plus"></i>
       <span class="item-name">Add Sub-Company</span>
     </a>
   </li>
   <li ng-if="isAdmin" class="divider"></li>
   <li ng-if="isAdmin">
     <a href="" ng-click="companySettings()">
-      <i class="glyphicons cogwheels"></i>
+      <i class="fa fa-cog"></i>
       <span class="item-name">Company Settings</span>
     </a>
   </li>
   <li ng-if="isAdmin" class="divider"></li>
   <li ng-if="isAdmin">
     <a href="" data-toggle="modal" data-target="#company-users-modal">
-      <i class="glyphicons group"></i>
+      <i class="fa fa-roup"></i>
       <span class="item-name">Company Users</span>
     </a>
   </li>

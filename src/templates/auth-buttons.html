@@ -15,21 +15,21 @@
       <li class="divider"></li>
       <li>
         <a href="" ng-click="userSettings()">
-          <i class="glyphicons cogwheels"></i>
+          <i class="fa fa-cog"></i>
           <span class="item-name">User Settings</span>
         </a>
       </li>
       <li class="divider"></li>
       <li>
         <a href="" ng-click="paymentMethods()">
-          <i class="glyphicons usd"></i>
+          <i class="fa fa-usd"></i>
           <span class="item-name">Payment Methods</span>
         </a>
       </li>
       <li class="divider"></li>
       <li ng-show="userState.authStatus > 0">
         <a href="" ng-click="logout()" class="sign-out-button">
-          <i class="glyphicons log_out"></i>
+          <i class="fa fa-sign-out"></i>
           <span class="item-name">Sign Out</span>
         </a>
       </li>
@@ -38,7 +38,7 @@
   <li ng-show="userState.authStatus === 0">
     <a href="" class="sign-in" ng-click="loginModal()">
       <span>Sign In</span>
-      <i class="glyphicons log_in"></i>
+      <i class="fa fa-sign-in"></i>
     </a>
   </li>
 </ul>
